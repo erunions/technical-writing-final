@@ -1,0 +1,166 @@
+@import "base.css";
+
+.hero-banner {
+    height: 120px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgb(255, 255, 255) url('../img/coral.jpg') center center / cover no-repeat;
+    box-shadow: 0px 7px 20px -1px rgba(0,0,0,0.2);
+}
+body {
+    background-color: rgb(241, 241, 241);
+    background-attachment: fixed;
+}
+nav {
+    padding-top: 20px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+nav ul li a {
+    color: rgb(255, 255, 255);
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 75%;
+    padding: 30px 0px 30px 0px;
+    margin: 0 auto;
+}
+
+.basichr {
+    margin: 0 auto;
+    border-top: 3px solid black;
+    width: 70%;
+}
+
+.row {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.articlestitle {
+    text-align: center;
+    font-size: 60px;
+    margin: 20px;
+}
+
+.articlecontainer {
+    width: 100%;
+    height: 350px;
+    background-color: white;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-shadow: 0px 7px 20px -1px rgba(0,0,0,0.2);
+}
+
+.articlecontainer img {
+    float: left;
+    height: 100%;
+    width: 40%;
+    object-fit: cover;
+}
+
+.articlecontainer h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+.articlecontainer p {
+    text-align: left;
+    height: 40%;
+    width: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.articlecontainer .articlebutton {
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 20%;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: 600;
+    background: linear-gradient(239deg, #1d60b8, #8aafe0, #1d60b8);
+    background-size: 600% 600%;
+
+    -webkit-animation: buttonshimmer 11s ease-in-out infinite normal;
+    -moz-animation: buttonshimmer 11s ease-in-out infinite normal;
+    animation: buttonshimmer 11s ease-in-out infinite normal;
+}
+
+@-webkit-keyframes buttonshimmer {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes buttonshimmer {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes buttonshimmer {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+/* smallest phone */
+@media screen and (min-width: 320px) {
+    .item { 
+        margin-left: 0px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .item:last-child {
+        margin-bottom: 0px;
+    }
+}
+/* phone */
+@media screen and (min-width: 580px) {
+    .item { 
+        margin-left: 0px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .item:last-child {
+        margin-bottom: 0px;
+    }
+}
+/* tablet */
+@media screen and (min-width: 768px) {
+    .item {
+        margin-left: 0px;
+        width: calc(50% - 30px);
+        margin-bottom: 30px;
+    }
+    .item:first-child {
+        margin-right: 30px;
+    }
+    .item:last-child {
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+}
+/* desktop */
+@media screen and (min-width: 1024px) {
+    .item {
+        margin-left: 0px;
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+    }
+    .item:first-child {
+        margin-right: 20px;
+    }
+    .item:last-child {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+}

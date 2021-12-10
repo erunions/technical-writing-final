@@ -1,0 +1,209 @@
+@import "base.css";
+
+nav {
+    padding-top: 20px;
+    color: white;
+}
+nav ul li a {
+    color: white;
+}
+
+.copyright {
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    margin: 0;
+    top: calc(100vh - 70px);
+}
+
+.copy {
+    color: white;
+    text-align: left;
+    margin-left: 10vw;
+}
+
+.get-in-touch {
+    height: 70vh;
+    width: 20vw;
+    background-color: white;
+    border-radius: 30px;
+    padding: 25px;
+    position: fixed;
+    top: 15vh;
+    left: 40vw;
+    z-index: 9999;
+    box-shadow: 0px 4px 36px 2px rgba(0,0,0,0.3);
+}
+
+.media-icons {
+    position: fixed;
+    top: 85vh;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    text-align: center;
+}
+
+.media-icons i {
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.get-in-touch h1 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.get-in-touch hr {
+    width: 100%;
+    border-top: 2px solid black;
+}
+
+label {
+    display: block;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(230, 230, 230);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: inset 0px 4px 36px 2px rgba(0,0,0,0.1);
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(230, 230, 230);
+    padding: 10px;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: inset 0px 4px 36px 2px rgba(0,0,0,0.1);
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-attachment: scroll;
+    background-image: url("../img/coral.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.overlay {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+input[type="text"]:valid, input[type="email"]:valid {
+    background: rgb(230, 230, 230) url('../img/checkmark-48.png') no-repeat 90% center;
+    background-size: 12px 12px;
+}
+
+.submit-button {
+    margin: 0 auto;
+    margin-top: 10px;
+    color: white;
+    height: 50px;
+    border-radius: 100px;
+    width: 150px;
+    font-weight: 600;
+    background: linear-gradient(239deg, #1d60b8, #8aafe0, #1d60b8);
+    background-size: 600% 600%;
+
+    -webkit-animation: buttonshimmer 11s ease-in-out infinite normal;
+    -moz-animation: buttonshimmer 11s ease-in-out infinite normal;
+    animation: buttonshimmer 11s ease-in-out infinite normal;
+}
+
+@-webkit-keyframes buttonshimmer {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes buttonshimmer {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes buttonshimmer {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+/* smallest phone */
+@media screen and (min-width: 320px) {
+    .get-in-touch {
+        height: 70vh;
+        width: 80vw;
+        top: 15vh;
+        left: 10vw;
+    }
+
+    textarea {
+        height: 80px;
+    }
+}
+/* phone */
+@media screen and (min-width: 580px) {
+    .get-in-touch {
+        height: 70vh;
+        width: 80vw;
+        top: 15vh;
+        left: 10vw;
+    }
+
+    textarea {
+        height: 80px;
+    }
+}
+/* tablet */
+@media screen and (min-width: 768px) {
+    .get-in-touch {
+        height: 70vh;
+        width: 40vw;
+        top: 15vh;
+        left: 30vw;
+    }
+
+    textarea {
+        height: 90px;
+    }
+}
+/* desktop */
+@media screen and (min-width: 1024px) {
+    .get-in-touch {
+        height: 70vh;
+        width: 30vw;
+        top: 15vh;
+        left: 35vw;
+    }
+
+    textarea {
+        height: 90px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .get-in-touch {
+        height: 70vh;
+        width: 30vw;
+        top: 15vh;
+        left: 35vw;
+    }
+
+    textarea {
+        height: 150px;
+    }
+}

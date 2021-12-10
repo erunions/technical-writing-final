@@ -1,0 +1,224 @@
+@import "base.css";
+
+.hero-banner {
+    height: 120px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 7px 20px -1px rgba(0,0,0,0.2);
+}
+body {
+    background-color: rgb(241, 241, 241);
+    background-attachment: fixed;
+}
+nav {
+    padding-top: 20px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+nav ul li a {
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    width: 75%;
+    padding: 30px 0px 30px 0px;
+    margin: 0 auto;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 7px 20px -1px rgba(0,0,0,0.05);
+}
+
+.content h1 {
+    padding: 20px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.content ol {
+    padding-left: 20px;
+}
+
+.content ul {
+    padding-left: 20px;
+}
+
+.content h2 {
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.content h3 {
+    padding-top: 10px;
+    font-weight: 500;
+    text-align: center; 
+    font-size: 15px;
+    color:rgb(53, 53, 53);
+}
+
+.content hr {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border-top: 2px solid black;
+}
+
+.content p, .content li {
+    margin: 10px;
+    font-weight: 400;
+    word-spacing: 50%;
+    color:rgb(44, 44, 44);
+}
+
+.copyright {
+    background-color: rgba(0, 0, 0, 0.05);
+    box-shadow: none;
+    margin: 0;
+}
+
+.content img {
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0px 7px 10px -1px rgba(0,0,0,0.2);
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+  
+tr:nth-child(even){background-color: #f2f2f2;}
+  
+tr:hover {background-color: #ddd;}
+  
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #197dac;
+    color: white;
+}
+
+/* smallest phone */
+@media screen and (min-width: 320px) {
+    .aboutmeprofilediv { display: none; }
+    .content hr { width: 100%; }
+    .content hr:first-of-type { margin-bottom: 0px;}
+    .content img { 
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .content h1 { 
+        text-align: center;
+        font-size: 20px;
+    }
+    .content h2 { 
+        text-align: center; 
+        font-size: 15px;
+        margin-left: 0;
+    }
+    .content p {
+        font-size: 12px;
+    }
+    .content { 
+        padding: 10px;
+    }
+}
+/* phone */
+@media screen and (min-width: 425px) {
+    .aboutmeprofilediv { display: none; }
+    .content hr { width: 100%; }
+    .content hr:first-of-type { margin-bottom: 0px;}
+    .content img { 
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .content h1 { 
+        text-align: center;
+        font-size: 30px;
+    }
+    .content h2 { 
+        text-align: center;
+        font-size: 20px; 
+        margin-left: 0;
+    }
+    .content p {
+        font-size: 16px;
+    }
+    .content { 
+        padding: 10px;
+    }
+}
+/* tablet */
+@media screen and (min-width: 768px) {
+    .aboutmeprofilediv { display: none; }
+    .content hr { width: 100%; }
+    .content hr:first-of-type { margin-bottom: 0px;}
+    .content img { 
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .content h1 { 
+        text-align: center;
+        font-size: 30px;
+    }
+    .content h2 { 
+        text-align: center; 
+        font-size: 20px;
+        margin-left: 0;
+    }
+    .content p {
+        font-size: 16px;
+    }
+    .content { 
+        padding: 30px;
+    }
+}
+/* desktop */
+@media screen and (min-width: 1024px) {
+    .aboutmeprofilediv { display: block; }
+    .content hr { width: 50%; }
+    .content img { 
+        width: 100%;
+        margin-bottom: 50px;
+        height: 400px;
+        object-fit: cover;
+    }
+    .imgignore {
+        box-shadow: none;
+        object-fit: contain;
+        width: 25%;
+        height: initial;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .content h1 { 
+        text-align: center;
+        font-size: 40px;
+    }
+    .content h2 { 
+        text-align: center; 
+        font-size: 25px;
+    }
+    .content p {
+        text-align: left;
+        font-size: 20px;
+        line-height: 25px;
+        word-spacing: 2px;
+        margin-bottom: 30px;
+    }
+    .content { 
+        padding: 50px;
+    }
+}

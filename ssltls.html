@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/style/article.css" media="all">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+        <title>Final Project</title>
+    </head>
+    <body>
+        <div class="overlay">
+            <div class="hero-banner" style="background: rgb(255, 255, 255) url('assets/img/sslimage.jpg') center center / cover no-repeat;">
+                <nav>
+                    <ul>
+                        <li>
+                            <h1>
+                                SuperDuperBlog
+                            </h1>
+                        </li>
+                        <span class="desktopnav">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="article.html">
+                                    Articles
+                                </a>
+                            </li>
+                            <li>
+                                <a href="aboutme.html">
+                                    About Me
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html">
+                                    Contact
+                                </a>
+                            </li>
+                        </span>
+                        <div class="mobilenav">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+            <div class="container">
+                <div class="content">
+                    <h1>A Short Explanation of SSL/TLS</h1>
+                    <hr>
+                    <p>If you’ve been on the internet enough, you’ve probably seen the small lock (🔒) icon in the corner of some websites. This lock indicates that the website is secure, and using the <b>Secure Socket Layer protocol (SSL)</b> or the <b>Transport Layer Security protocol (TLS)</b>. But what is SSL? In short, it’s a protocol websites can use to hide the data being passed between the user and the website. Basically, the website sends the browser a certificate that the browser looks at and checks if it’s legitimate. If it verifies the certificate, it sends a go ahead to the server to start a secure SSL session. It sounds like a lot, but it happens incredibly quickly. </p>
+                    <img src="assets/img/sslimg1.jpg">
+                    <p>This system makes sure hackers can’t intercept your banking information or see what you’re up to. SSL has a successor, too. It’s called TLS and it was released in 1999 as an upgrade to SSL v3.0. The main difference is that TLS’s handshake (the part where it establishes a secure connection) involves many more steps and moving parts. TLS is very similar to SSL once it establishes a connection, except it’s harder to gain unauthorized access to. The protocols are so similar most web technicians group them together and refer to both as SSL.</p>
+                    <img src="assets/img/sslimg2.jpg">
+                    <p>Another thing SSL and TLS do is change the link of the website. When you copy a link to send to someone, it’ll always start with something like this: “http://” or “https://”. After everything explained here, you can probably guess what the S stands for: secure. That’s what the lock signifies. An unlocked lock means the website is HTTP, which is unprotected and unsafe. A locked lock means the website is HTTPS, and using a safe protocol such as SSL or TLS.</p>
+                </div>
+            </div>
+            <footer>
+    
+            </footer>
+            <div class="copyright">
+                <p class="copy">&copy; Elliot Runions 2021</p> 
+            </div>
+        </div>
+    </body>
+</html>
